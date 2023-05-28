@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    border: 2px solid;
+    width: 500px;
+    height: 800px;
+    margin: auto;
+}
+.one{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(4, 77, 122);
+    border: none;
+    animation-name: row1;
+    animation-iteration-count: infinite;
+    transition: 2s;
+    transform: rotate(180deg);
+    animation-duration: 2s;
+
+}
+@keyframes row1 {
+    form{
+        rotate: 10deg;
+    }
+    to {
+        rotate: 360deg;
+    }
+}
+
+.list1{
+    display: flex;
+    /* flex-direction: row; */
+justify-content: center;
+justify-content: space-evenly;
+}
+/* for second row  */
+.two{
+width: 100px;
+height: 110px;
+background-color: rgb(4, 77, 122);
+border: none;
+
+
+}
+.list2{
+    display: flex;
+    justify-content: space-evenly;
+}
+/* .list2{
+    animation-name: box2;
+    position: relative;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transition: 1s;
+    transform: skewX(20deg);
+} */
+.two {
+
+animation-name: row2;
+position: relative;
+animation-duration: 4s;
+animation-iteration-count: infinite;
+animation-direction: alternate-reverse;
+}
+@keyframes row2{
+0% {
+transform: skewX(30deg);
+
+
+}
+100% {
+    transform: skewX(-30deg);
+
+}
+}
+
+.three{
+    width: 100px;
+height: 110px;
+background-color: rgb(4, 77, 122);
+border: none;
+background-color: grey;
+}
+.row3{
+justify-content: center;
+display: flex;
+justify-content:space-evenly ;
+position: relative;
+transition:  ease-in-out 2s;
+
+}
+.three{
+animation-name: three;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+transition: all ease-in-out 2s;
+animation-direction: alternate-reverse;
+
+}
+@keyframes three {
+0% {
+transform:skewY(30deg) ;
+
+}
+100% {
+    transform:skewY(-30deg) ;
+
+}
+}
+
+.four{
+    width: 100px;
+    height: 110px;
+    border: 2px solid;
+    
+}
+.row4{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+
+}
+.blue{
+background-color: rgb(10, 92, 146);
+animation-name:skew ;
+animation-iteration-count: infinite;
+animation-duration: 4s;
+
+}
+@keyframes skew {
+form{
+
+    transform: rotateX(40deg);
+}
+to{
+
+    transform:rotateZ(-40deg) ;
+    transform: rotateX(70deg);
+
+}
+
+}
+.red{
+   background-color:brown; 
+   animation-name: ones;
+   animation-duration: 2s;
+   animation-iteration-count: infinite;
+
+}
+@keyframes ones {
+form{
+
+    transform:rotate3d(40deg) ;
+
+}
+to{
+
+    transform:rotateY(60deg) ;
+
+
+}
+
+}
+ .header{
+
+    padding-top: 80px;
+    text-decoration: underline;
+    color: black;
+ }
+ .green{
+animation-name: example5;
+animation-duration: 4s;
+background-color: green;
+animation-iteration-count: infinite;
+animation-direction: alternate-reverse;
+ }
+ @keyframes example5 {
+
+    0%{
+        transform: rotate(-20deg);
+    }
+    100%{
+        transform: rotate(40deg);
+    }
+ }
+ .four {
+    border: none;
+ }
+

@@ -1,0 +1,107 @@
+body {
+background-color: rgb(212, 212, 41);
+margin: 0;
+padding: 0;
+
+}
+li {
+border: 2px solid;
+width: 100px;
+height: 100px;
+
+}
+.container-pge2 {
+
+    border:none;
+    width: 50vw;
+    text-align: center;
+    position: relative;
+    left: 350px;
+/* display: flex;
+flex-direction: column; */
+/* padding: 10px; */
+
+
+}
+.trans{
+    background-color:green;
+}
+
+.trans1{
+transition: ease-in-out;
+transition: 4s;
+
+
+}
+.trans1:hover {
+
+    width: 400px;
+}
+
+.trans2{
+    /* transition: 2s ; */
+/* transform: scale(1); */
+transition: width 2s,height 4s;
+}
+.trans2:hover {
+width: 300px;
+height: 300px;
+
+}
+.trans3 {
+
+transition: 4s;
+
+}
+.trans3:hover {
+    width: 300px;
+}
+.trans4{
+transition-timing-function: ease;
+transition: 2s;
+}
+.trans4:hover {
+
+    width: 300px;
+}
+.trans5{
+    transition: 2s;
+    transition-timing-function: ease-in;
+
+}
+.trans5:hover{
+
+    width: 300px;
+
+}
+.trans6{
+    transition: 2s;
+    transition-timing-function: ease-out;
+}
+.trans6:hover{
+
+    width: 300px;
+}
+.trans7{
+    transition: 2s;
+    transition-timing-function: ease-in-out;
+}
+.trans7:hover{
+    width: 300px;
+}
+li {
+    border: none;
+}
+.back{
+text-align: left;
+    padding-left: 50px;
+}
+.next{
+    text-align: left;
+    padding-left: 50px;
+
+}
+
+
+
+
